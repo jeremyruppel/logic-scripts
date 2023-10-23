@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Logic Pro Scripter script collection",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "logic-pro-types": "^1.0.0",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
