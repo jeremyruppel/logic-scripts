@@ -7,7 +7,7 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "logic-pro-types": "^1.0.0",
+    "logic-pro-types": "^1.0.3",
     "typescript": "^5.2.2"
   },
   "keywords": [],
