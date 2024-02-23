@@ -9,10 +9,18 @@ const PluginParameters: PluginParameters = [
     defaultValue: 3,
   },
   {
+    name: "Scale",
+    type: "lin",
+    minValue: 0,
+    maxValue: 5,
+    numberOfSteps: 5,
+    defaultValue: 2,
+  },
+  {
     name: "Min delay",
     type: "lin",
     minValue: 0,
-    maxValue: 100,
+    maxValue: 50,
     numberOfSteps: 100,
     defaultValue: 0,
   },
@@ -21,9 +29,9 @@ const PluginParameters: PluginParameters = [
     name: "Max delay",
     type: "lin",
     minValue: 0,
-    maxValue: 500,
+    maxValue: 200,
     numberOfSteps: 100,
-    defaultValue: 100,
+    defaultValue: 50,
   },
 ];
 
@@ -39,9 +47,9 @@ function HandleMIDI(e: NoteOn | NoteOff) {
   if (e instanceof NoteOn) {
     for (let i = 1; i < GetParameter("# of claps"); i++) {
       const clap = new NoteOn();
-      clap.pitch = e.pitch + i * 4; // scale claps 4 semitones apart
+      clap.pitch = e.pitch + i * GetParameter("Scale");
       clap.velocity = rand(70, 100);
-      clap.sendAfterMilliseconds(50);
+      clap.sendAfterMilliseconds(delay());
     }
   }
 }

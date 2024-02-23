@@ -1,8 +1,17 @@
 # logic scripts
 
-## clap
+- TypeScript source files should be placed in `src/`
+- JavaScript output files will be writte to `dist/`
+
+## commands
+
+- `npm run build` builds the `src/` directory
+- `npm run watch` does the above but watches for changes
+
+## scripts
+
+### clap
 
 When a noteon comes in, fire off a few other notes with different pitch and
-random velocity. Useful for adding realism to a clap sample.
-
-
+random velocity. Useful for adding realism to a clap sample. It's good for a
+snap too.

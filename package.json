@@ -3,13 +3,14 @@
   "private": true,
   "description": "My Logic Pro Scripter script collection",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
   "devDependencies": {
     "logic-pro-types": "^1.0.0",
     "typescript": "^5.2.2"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jeremy Ruppel",
   "license": "ISC"
 }
