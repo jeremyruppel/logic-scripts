@@ -1,5 +1,9 @@
 # logic scripts
 
+If you just want to download some Scripter scripts, go to the [latest Release](https://github.com/jeremyruppel/logic-scripts/releases).
+
+## important files
+
 - TypeScript source files should be placed in `src/`
 - JavaScript output files will be written to `dist/`
 
