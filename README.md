@@ -1,7 +1,7 @@
 # logic scripts
 
 - TypeScript source files should be placed in `src/`
-- JavaScript output files will be writte to `dist/`
+- JavaScript output files will be written to `dist/`
 
 ## commands
 
@@ -9,6 +9,9 @@
 - `npm run watch` does the above but watches for changes
 
 ## scripts
+
+Built JavaScript files end up in `dist/`. From there, you can copy and paste
+them into Scripter and save them for later use.
 
 ### clap
 
