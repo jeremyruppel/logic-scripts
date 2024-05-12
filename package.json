@@ -3,10 +3,11 @@
   "private": true,
   "description": "My Logic Pro Scripter script collection",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "esbuild src/*.ts --outdir=dist",
+    "watch": "npm run build -- --watch"
   },
   "devDependencies": {
+    "esbuild": "^0.21.1",
     "logic-pro-types": "^1.0.3",
     "typescript": "^5.2.2"
   },

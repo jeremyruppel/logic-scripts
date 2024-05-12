@@ -1,5 +1,5 @@
 /// <reference types="logic-pro-types" />
-const PluginParameters: PluginParameters = [
+var PluginParameters: PluginParameters = [
   {
     name: "# of claps",
     type: "lin",
